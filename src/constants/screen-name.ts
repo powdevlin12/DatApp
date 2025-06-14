@@ -1,6 +1,8 @@
 const SCREEN_NAME = {
-  HOME: 'Home' as 'Home',
-  MAIN: 'Main' as 'Main',
+  HOME: 'home' as const,
+  PROFILE: 'profile' as const,
+  PROFILE_DETAIL: 'profile-detail' as const,
+  MAIN: 'Main' as const,
 };
 
 export default SCREEN_NAME;
