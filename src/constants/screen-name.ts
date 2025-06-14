@@ -5,6 +5,7 @@ const SCREEN_NAME = {
   PROFILE_DETAIL: 'profile-detail' as const,
   MAIN: 'Main' as const,
   MENU_SCREEN: 'MenuScreen' as const,
+  LIST_VIEW_NATIVE: 'ListViewNative' as const,
 };
 
 export default SCREEN_NAME;

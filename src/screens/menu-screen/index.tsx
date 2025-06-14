@@ -1,4 +1,10 @@
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  NativeModules,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React from 'react';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {MainStackParamList} from '../../navigation/main-stack-navigation';
@@ -19,6 +25,8 @@ type NavigationProp = StackNavigationProp<
 const MenuScreen = () => {
   const navigation = useNavigation<NavigationProp>();
 
+  const {ListViewModule} = NativeModules;
+
   const menuList: TMenuItem[] = [
     {
       id: 1,
@@ -29,6 +37,11 @@ const MenuScreen = () => {
       id: 2,
       onPress: () => navigation.navigate(SCREEN_NAME.TODO_LIST_NATIVE),
       title: 'Todo Native Android',
+    },
+    {
+      id: 3,
+      onPress: () => ListViewModule.handleGetIntentListView(),
+      title: 'ListView Native Android',
     },
   ];
   return (

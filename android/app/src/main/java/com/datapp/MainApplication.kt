@@ -1,6 +1,7 @@
 package com.datapp
 
 import android.app.Application
+import com.datapp.listview.ListViewPackage
 import com.datapp.todos.TodoPackage
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
@@ -23,6 +24,7 @@ class MainApplication : Application(), ReactApplication {
               // add(MyReactNativePackage())
               add(LoginPackage());
               add(TodoPackage());
+              add(ListViewPackage());
             }
 
         override fun getJSMainModuleName(): String = "index"

@@ -1,6 +1,11 @@
 import SCREEN_NAME from '../../constants/screen-name';
 import {createStackNavigator, TransitionPresets} from '@react-navigation/stack';
-import {HomeScreen, MenuScreen, TodoListNative} from '../../screens';
+import {
+  HomeScreen,
+  ListViewNative,
+  MenuScreen,
+  TodoListNative,
+} from '../../screens';
 import ProfileDetailScreen from '../../screens/profile-detail';
 import ProfileScreen from '../../screens/profile';
 
@@ -12,6 +17,7 @@ export type MainStackParamList = {
   };
   [SCREEN_NAME.TODO_LIST_NATIVE]: undefined;
   [SCREEN_NAME.MENU_SCREEN]: undefined;
+  [SCREEN_NAME.LIST_VIEW_NATIVE]: undefined;
 };
 
 const Stack = createStackNavigator<MainStackParamList>();
@@ -49,6 +55,13 @@ const MainStackNavigator = () => {
         component={MenuScreen}
         options={{
           title: 'Menu',
+        }}
+      />
+      <Stack.Screen
+        name={SCREEN_NAME.LIST_VIEW_NATIVE}
+        component={ListViewNative}
+        options={{
+          title: 'List View Native',
         }}
       />
     </Stack.Navigator>
