@@ -1,6 +1,6 @@
 import SCREEN_NAME from '../../constants/screen-name';
 import {createStackNavigator, TransitionPresets} from '@react-navigation/stack';
-import {HomeScreen} from '../../screens';
+import {HomeScreen, TodoListNative} from '../../screens';
 import ProfileDetailScreen from '../../screens/profile-detail';
 import ProfileScreen from '../../screens/profile';
 
@@ -10,6 +10,7 @@ export type MainStackParamList = {
   [SCREEN_NAME.PROFILE_DETAIL]: {
     userID: string;
   };
+  [SCREEN_NAME.TODO_LIST_NATIVE]: undefined;
 };
 
 const Stack = createStackNavigator<MainStackParamList>();
@@ -22,7 +23,7 @@ const MainStackNavigator = () => {
         gestureEnabled: true,
         ...TransitionPresets.SlideFromRightIOS,
       }}
-      initialRouteName={SCREEN_NAME.HOME}>
+      initialRouteName={SCREEN_NAME.TODO_LIST_NATIVE}>
       <Stack.Screen
         name={SCREEN_NAME.HOME}
         component={HomeScreen}
@@ -34,6 +35,13 @@ const MainStackNavigator = () => {
       <Stack.Screen
         name={SCREEN_NAME.PROFILE_DETAIL}
         component={ProfileDetailScreen}
+      />
+      <Stack.Screen
+        name={SCREEN_NAME.TODO_LIST_NATIVE}
+        component={TodoListNative}
+        options={{
+          title: 'My Todo',
+        }}
       />
     </Stack.Navigator>
   );
