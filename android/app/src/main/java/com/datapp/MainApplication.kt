@@ -1,6 +1,7 @@
 package com.datapp
 
 import android.app.Application
+import com.datapp.learn.LearnPackage
 import com.datapp.listview.ListViewPackage
 import com.datapp.todos.TodoPackage
 import com.facebook.react.PackageList
@@ -25,6 +26,7 @@ class MainApplication : Application(), ReactApplication {
               add(LoginPackage());
               add(TodoPackage());
               add(ListViewPackage());
+              add(LearnPackage());
             }
 
         override fun getJSMainModuleName(): String = "index"

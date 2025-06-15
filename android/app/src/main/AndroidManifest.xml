@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".learn.LinearLayoutLearn"
+            android:exported="false" />
+        <activity
             android:name=".listview.ListViewActivity"
             android:exported="false" />
         <activity

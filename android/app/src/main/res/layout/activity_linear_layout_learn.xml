@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Weight = 1"
+        android:background="#dc9e1a"
+        android:textSize="32sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="Weight = 3"
+        android:background="#00c853"
+        android:textSize="32sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="Weight = 2"
+        android:background="#141ba9"
+        android:textColor="#fff"
+        android:textSize="32sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:text="Weight = 4"
+        android:background="#dc1a8b"
+        android:textSize="32sp"
+        android:textColor="#fff"
+        />
+</LinearLayout>

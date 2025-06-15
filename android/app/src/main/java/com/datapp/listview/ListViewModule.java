@@ -27,5 +27,12 @@ public class ListViewModule extends ReactContextBaseJavaModule {
         Intent i = new Intent(getCurrentActivity(), ListViewActivity.class);
         getCurrentActivity().startActivity(i);
     }
+
+    @ReactMethod
+    public void openMessageApp() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_APP_GALLERY);
+        getCurrentActivity().startActivity(intent);
+    }
 }
 

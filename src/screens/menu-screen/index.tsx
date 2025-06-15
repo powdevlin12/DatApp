@@ -25,7 +25,7 @@ type NavigationProp = StackNavigationProp<
 const MenuScreen = () => {
   const navigation = useNavigation<NavigationProp>();
 
-  const {ListViewModule} = NativeModules;
+  const {ListViewModule, LearnModule} = NativeModules;
 
   const menuList: TMenuItem[] = [
     {
@@ -36,12 +36,17 @@ const MenuScreen = () => {
     {
       id: 2,
       onPress: () => navigation.navigate(SCREEN_NAME.TODO_LIST_NATIVE),
-      title: 'Todo Native Android',
+      title: '(Android) Todo Native',
     },
     {
       id: 3,
       onPress: () => ListViewModule.handleGetIntentListView(),
-      title: 'ListView Native Android',
+      title: '(Android) ListView Native',
+    },
+    {
+      id: 4,
+      onPress: () => LearnModule.startIntentLearnLinearLayout(),
+      title: '(Android) LinearLayout',
     },
   ];
   return (
