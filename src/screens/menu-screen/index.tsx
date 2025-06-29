@@ -48,6 +48,31 @@ const MenuScreen = () => {
       onPress: () => LearnModule.startIntentLearnLinearLayout(),
       title: '(Android) LinearLayout',
     },
+    {
+      id: 5,
+      onPress: () => navigation.navigate(SCREEN_NAME.SLIDER_SCREEN),
+      title: 'Slider',
+    },
+    {
+      id: 6,
+      onPress: () => navigation.navigate(SCREEN_NAME.ANIMATED_SCREEN),
+      title: 'Animated',
+    },
+    {
+      id: 7,
+      onPress: () => navigation.navigate(SCREEN_NAME.DRAG_AND_DROP),
+      title: 'Drag And Drop',
+    },
+    {
+      id: 8,
+      onPress: () => navigation.navigate(SCREEN_NAME.NAVIGATION_IG_SCREEN),
+      title: 'Instagram',
+    },
+    {
+      id: 9,
+      onPress: () => navigation.navigate(SCREEN_NAME.MODAL_SCREEN),
+      title: 'Modal',
+    },
   ];
   return (
     <View style={styles.container}>

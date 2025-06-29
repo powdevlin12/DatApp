@@ -20,6 +20,8 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Ứng dụng cần quyền để gửi thông báo.</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

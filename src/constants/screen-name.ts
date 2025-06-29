@@ -6,6 +6,11 @@ const SCREEN_NAME = {
   MAIN: 'Main' as const,
   MENU_SCREEN: 'MenuScreen' as const,
   LIST_VIEW_NATIVE: 'ListViewNative' as const,
+  SLIDER_SCREEN: 'SliderScreen' as const,
+  ANIMATED_SCREEN: 'Animated' as const,
+  DRAG_AND_DROP: 'DragAndDrop' as const,
+  NAVIGATION_IG_SCREEN: 'NavigationIgScreen' as const,
+  MODAL_SCREEN: 'ModalScreen' as const,
 };
 
 export default SCREEN_NAME;

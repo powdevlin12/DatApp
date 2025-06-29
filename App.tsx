@@ -6,8 +6,9 @@
  */
 
 import {LinkingOptions, NavigationContainer} from '@react-navigation/native';
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
+  Platform,
   SafeAreaView,
   StatusBar,
   StyleSheet,
@@ -18,6 +19,15 @@ import {
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import SCREEN_NAME from './src/constants/screen-name';
 import RootStackNavigation from './src/navigation/root-stack-navigation';
+import {
+  getDevicesToken,
+  requestNotificationsPermission,
+} from './src/utils/notifications';
+
+// * NOTIFICATION
+export const isIos = () => Platform.OS === 'ios';
+export const isAndroid = () => Platform.OS === 'android';
+export const getPlatformVersion = () => Number(Platform.Version);
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -40,6 +50,25 @@ function App(): React.JSX.Element {
       },
     },
   };
+
+  useEffect(() => {
+    if (isIos() || (isAndroid() && getPlatformVersion() >= 33)) {
+      requestNotificationsPermission(
+        () => {
+          //notification granted tasks
+          console.log('ALLOW');
+        },
+        () => {
+          //notification denied tasks
+          console.log('DISABLE');
+        },
+      );
+    }
+  }, []);
+
+  useEffect(() => {
+    getDevicesToken();
+  }, []);
 
   return (
     <View style={styles.container}>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "268228537212",
+    "project_id": "dattest-abdec",
+    "storage_bucket": "dattest-abdec.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268228537212:android:9561beb31a1520a19152f9",
+        "android_client_info": {
+          "package_name": "com.datapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeu_7VNBOSYUmjdarp-dXBVbbMwzQuog4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

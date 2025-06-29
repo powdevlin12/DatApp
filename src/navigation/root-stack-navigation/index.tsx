@@ -41,7 +41,7 @@ const RootStackNavigation = () => {
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
-        ...TransitionPresets.SlideFromRightIOS,
+        // ...TransitionPresets.SlideFromRightIOS,
       }}
       initialRouteName={SCREEN_NAME.MAIN}>
       <Stack.Screen name={SCREEN_NAME.MAIN} component={MainStackNavigator} />

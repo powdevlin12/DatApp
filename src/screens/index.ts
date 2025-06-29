@@ -2,3 +2,8 @@ export {default as HomeScreen} from './home';
 export {default as TodoListNative} from './todo-list';
 export {default as MenuScreen} from './menu-screen';
 export {default as ListViewNative} from './list-view-native';
+export {default as SliderScreen} from './slider-screen';
+export {default as AnimatedScreen} from './animated-screen';
+export {default as DragAndDropScreen} from './drag-and-drop-screen';
+export {default as NavigationIgScreen} from './navigation-ig-screen';
+export {default as ModalScreen} from './modal-screen';
