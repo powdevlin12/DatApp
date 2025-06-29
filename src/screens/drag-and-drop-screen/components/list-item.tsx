@@ -68,7 +68,7 @@ export const ListItem = ({
         ? interpolateColor(
             isDraggingDerived.value,
             [0, 1],
-            [Color_Pallete.metal_black, Color_Pallete.crystal_white],
+            [Color_Pallete.metal_black],
           )
         : undefined,
       shadowOffset: {
@@ -149,9 +149,9 @@ const styles = StyleSheet.create({
   description1: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: Color_Pallete.crystal_white,
+    // color: Color_Pallete.crystal_white,
   },
-  description2: {color: Color_Pallete.silver_storm},
+  description2: {color: 'red'},
   draggerContainer: {
     width: '20%',
     alignItems: 'center',
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
   dragger: {
     width: '30%',
     height: 2,
-    backgroundColor: Color_Pallete.crystal_white,
+    // backgroundColor: Color_Pallete.crystal_white,
   },
   image: {
     height: SONG_HEIGHT - 20,

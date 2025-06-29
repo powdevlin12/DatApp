@@ -7,8 +7,8 @@ import {getInitialPositions, TSongPositions} from './components/contants';
 export const Color_Pallete = {
   metal_black: '#0E0C0A',
   night_shadow: '#1C1C1C',
-  crystal_white: '#FFFFFF',
-  silver_storm: '#808080',
+  // crystal_white: '#FFFFFF',
+  // silver_storm: '#808080',
 };
 
 export const SONG_HEIGHT = 80;
