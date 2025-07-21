@@ -7,3 +7,4 @@ export {default as AnimatedScreen} from './animated-screen';
 export {default as DragAndDropScreen} from './drag-and-drop-screen';
 export {default as NavigationIgScreen} from './navigation-ig-screen';
 export {default as ModalScreen} from './modal-screen';
+export {default as SQLLiteScreen} from './sql-lite-screen';

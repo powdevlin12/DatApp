@@ -9,6 +9,7 @@ import {
   ModalScreen,
   NavigationIgScreen,
   SliderScreen,
+  SQLLiteScreen,
   TodoListNative,
 } from '../../screens';
 import ProfileDetailScreen from '../../screens/profile-detail';
@@ -28,6 +29,7 @@ export type MainStackParamList = {
   [SCREEN_NAME.DRAG_AND_DROP]: undefined;
   [SCREEN_NAME.NAVIGATION_IG_SCREEN]: undefined;
   [SCREEN_NAME.MODAL_SCREEN]: undefined;
+  [SCREEN_NAME.SQL_LITE_SCREEN]: undefined;
 };
 
 const Stack = createStackNavigator<MainStackParamList>();
@@ -110,6 +112,13 @@ const MainStackNavigator = () => {
         component={ModalScreen}
         options={{
           title: 'Modal',
+        }}
+      />
+      <Stack.Screen
+        name={SCREEN_NAME.SQL_LITE_SCREEN}
+        component={SQLLiteScreen}
+        options={{
+          title: 'SQL Lite',
         }}
       />
     </Stack.Navigator>

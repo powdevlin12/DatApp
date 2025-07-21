@@ -11,6 +11,7 @@ const SCREEN_NAME = {
   DRAG_AND_DROP: 'DragAndDrop' as const,
   NAVIGATION_IG_SCREEN: 'NavigationIgScreen' as const,
   MODAL_SCREEN: 'ModalScreen' as const,
+  SQL_LITE_SCREEN: 'SQLLiteScreen' as const,
 };
 
 export default SCREEN_NAME;

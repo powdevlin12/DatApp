@@ -73,6 +73,11 @@ const MenuScreen = () => {
       onPress: () => navigation.navigate(SCREEN_NAME.MODAL_SCREEN),
       title: 'Modal',
     },
+    {
+      id: 10,
+      onPress: () => navigation.navigate(SCREEN_NAME.SQL_LITE_SCREEN),
+      title: 'SQL Lite',
+    },
   ];
   return (
     <View style={styles.container}>
